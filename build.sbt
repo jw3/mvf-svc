@@ -64,14 +64,16 @@ lazy val scalatestVersion = "3.0.3"
 lazy val commonLibraries = {
   Seq(
     "com.iheart" %% "ficus" % "1.4.0",
-    "org.julienrf" %% "play-json-derived-codecs" % "4.0.0",
-    "com.typesafe.play" %% "play-ahc-ws-standalone" % "1.1.2",
-    "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
 
     "com.typesafe.akka" %% "akka-actor" % akkaVersion,
     "com.typesafe.akka" %% "akka-typed" % akkaVersion,
+    "com.typesafe.akka" %% "akka-remote" % akkaVersion,
+
     "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
     "com.typesafe.akka" %% "akka-http-core" % akkaHttpVersion,
+    "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
+    "org.julienrf" %% "play-json-derived-codecs" % "4.0.0",
+    "com.typesafe.play" %% "play-ahc-ws-standalone" % "1.1.2",
 
     "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
     "ch.qos.logback" % "logback-classic" % "1.1.9",
