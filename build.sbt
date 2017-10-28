@@ -27,7 +27,7 @@ lazy val core =
   .settings(
     name := "mvf-core"
   )
-  .enablePlugins(GitVersioning, OpenShiftPlugin)
+  .enablePlugins(GitVersioning, JavaServerAppPackaging, OpenShiftPlugin)
 
 
 /**
