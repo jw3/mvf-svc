@@ -14,3 +14,9 @@ Some simple services to simple things...
 ### Reference
 
 - https://github.com/jw3/mvf
+
+
+### OpenShift
+
+Example:
+- `#! oc new-app jwiii/sbt-s2i:0.13.16-2.12.3~https://github.com/jw3/mvf-svc.git --build-env="SBT_SUBPROJECT=client" --name=test`
